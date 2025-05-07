@@ -1,4 +1,9 @@
-from estudiantes.registro import cargar_estudiantes, mostrar_estudiantes_tabla, mostrar_promedio_general
+from estudiantes.registro import (
+    cargar_estudiantes,
+    mostrar_estudiantes_tabla,
+    mostrar_promedio_general
+)
+
 
 def main():
     estudiantes = cargar_estudiantes()
@@ -6,7 +11,7 @@ def main():
     if not estudiantes:
         print("No se encontraron estudiantes válidos.")
         return
-    
+
     mostrar_estudiantes_tabla(estudiantes)
     mostrar_promedio_general(estudiantes)
 

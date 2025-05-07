@@ -42,4 +42,3 @@ def mostrar_promedio_general(estudiantes):
     suma_notas = sum(est['nota'] for est in estudiantes)
     promedio = suma_notas / len(estudiantes)
     print(f"\nPromedio general de notas: {promedio:.2f}")
-

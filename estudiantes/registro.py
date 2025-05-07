@@ -21,3 +21,11 @@ def cargar_estudiantes():
 
     except FileNotFoundError:
         return []
+def mostrar_estudiantes_tabla(estudiantes):
+    estudiantes_ordenados = sorted(estudiantes, key=lambda est: est['nombre'])
+
+    print(f"{'Nombre':<20} {'Nota':>5}")
+    print("-" * 26)
+
+    for est in estudiantes_ordenados:
+        print(f"{est['nombre']:<20} {est['nota']:>5.2f}")
